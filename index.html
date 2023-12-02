@@ -6,8 +6,42 @@
 <body>
     <!-- Vous pouvez ajouter d'autres éléments HTML ici si nécessaire -->
 
+    <!-- Commentaire débutant ici
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/3fd735fe-f6e5-44fa-8250-d17ca03249b9/webchat/config.js" defer></script>
+Commentaire se terminant ici -->
+    
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "072939e0-f3ab-4a4f-b9f9-62b3c6dac75a",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "072939e0-f3ab-4a4f-b9f9-62b3c6dac75a",
+      "webhookId": "a14bf6c8-a66c-4839-b359-71777b2bde49",
+      "lazySocket": true,
+      "themeName": "prism",
+      "frontendVersion": "v1",
+      "showPoweredBy": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
+
+window.addEventListener("load", function() {
+    window.botpressWebChat.sendEvent({type: "show"});
+
+    setTimeout(function(){
+    window.botpressWebChat.sendPayload({
+    type: "trigger",
+    payload: {}
+    });
+    }, 3500);
+    });
+    
+    
 
     <!-- Commentaire débutant ici
 <script type="text/javascript">

@@ -42,7 +42,9 @@ window.addEventListener("load", function() {
     setTimeout(function(){
     window.botpressWebChat.sendPayload({
     type: "trigger",
-    payload: {}
+    payload: {
+    myCustomProperty: "hello",
+    }
     });
     }, 1000);
     });
@@ -53,6 +55,8 @@ window.addEventListener("load", function() {
     window.botpressWebChat.onEvent(
         function () {
             window.botpressWebChat.sendEvent({ type: "show" });
+            window.botpressWebChat.sendPayload({
+            type: "trigger"});
         },
         ["LIFECYCLE.LOADED"]
     );

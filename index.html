@@ -7,7 +7,7 @@
 
 
 <script>
-    const typebotInitScript = document.createElement("script");
+const typebotInitScript = document.createElement("script");
 typebotInitScript.type = "module";
 typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js'
 
@@ -17,7 +17,7 @@ Typebot.initBubble({
     message: "Hey c'est Yomi, viens me parler 😉",
     autoShowDelay: 2000,
     avatarUrl:
-      "https://storage.cloud.google.com/mindeo_video_storage/Yomi_round",
+      "https://s3.typebot.io/public/workspaces/clp8ug4in000vl50fcaks7lxn/typebots/clpupgt7h0009jm0f4u1d4b99/hostAvatar?v=1701964869124",
   },
   theme: {
     button: { backgroundColor: "#D27A7D", iconColor: "#fff" },
@@ -29,7 +29,6 @@ Typebot.initBubble({
 });
 `;
 document.body.append(typebotInitScript);
-
     </script>
 
     

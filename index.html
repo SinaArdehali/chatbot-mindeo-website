@@ -37,6 +37,15 @@ Typebot.initBubble({
 });
 `;
 document.body.append(typebotInitScript);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var liteBadgeElement = document.querySelector('#lite-badge span');
+    if (liteBadgeElement) {
+        liteBadgeElement.textContent = 'Votre Texte Ici';
+    }
+});
+
     </script>
 
     

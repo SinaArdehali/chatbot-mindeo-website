@@ -4,6 +4,33 @@
     <title>Mon Chatbot</title>
 </head>
 <body>
+
+
+
+    const typebotInitScript = document.createElement("script");
+typebotInitScript.type = "module";
+typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js'
+
+Typebot.initBubble({
+  typebot: "my-typebot-u1d4b99",
+  previewMessage: {
+    message: "Hey c'est Yomi, viens me parler 😉",
+    autoShowDelay: 2000,
+    avatarUrl:
+      "https://storage.cloud.google.com/mindeo_video_storage/Yomi_round",
+  },
+  theme: {
+    button: { backgroundColor: "#D27A7D", iconColor: "#fff" },
+    previewMessage: {
+      backgroundColor:
+        "https://app.typebot.io/images/backgrounds/brightRain.jpeg",
+    },
+  },
+});
+`;
+document.body.append(typebotInitScript);
+
+    
     <!-- Vous pouvez ajouter d'autres éléments HTML ici si nécessaire -->
 
     <!-- Commentaire débutant ici
@@ -36,7 +63,7 @@ Commentaire se terminant ici -->
   });
 Commentaire se terminant ici -->
 
-
+<!-- Commentaire débutant ici
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script>
   window.botpressWebChat.init({
@@ -57,6 +84,8 @@ Commentaire se terminant ici -->
       "theme": "prism",
       "themeColor": "#2563eb"
   });
+
+    
   
 /*
 window.addEventListener("load", function() {
@@ -75,6 +104,7 @@ window.addEventListener("load", function() {
 
         // Opens up the Chatbot by default
     // This lets users start chatting with the Chatbot without needing to click any buttons or menus.
+ 
     window.botpressWebChat.onEvent(
         function () {
             window.botpressWebChat.sendEvent({ type: "show" });
@@ -85,6 +115,8 @@ window.addEventListener("load", function() {
     );
 
     </script>
+
+*/
 
     
     <!-- Commentaire débutant ici

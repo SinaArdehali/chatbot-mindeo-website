@@ -14,16 +14,24 @@ typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm
 Typebot.initBubble({
   typebot: "my-typebot-u1d4b99",
   previewMessage: {
-    message: "Hey c'est Yomi, viens me parler 😉",
-    autoShowDelay: 2000,
+    message: "Hey, c'est Yomi, viens me parler ! 😉",
+    autoShowDelay: 3000,
     avatarUrl:
-      "https://s3.typebot.io/public/workspaces/clp8ug4in000vl50fcaks7lxn/typebots/clpupgt7h0009jm0f4u1d4b99/hostAvatar?v=1701964869124",
+      "https://s3.typebot.io/public/workspaces/clp8ug4in000vl50fcaks7lxn/typebots/clpupgt7h0009jm0f4u1d4b99/hostAvatar?v=1701972917804",
   },
   theme: {
-    button: { backgroundColor: "#D27A7D", iconColor: "#fff" },
+    button: {
+      backgroundColor: "#1a5fff",
+      iconColor: "#ffffff",
+      customIconSrc:
+        "https://s3.typebot.io/public/workspaces/clp8ug4in000vl50fcaks7lxn/typebots/clpupgt7h0009jm0f4u1d4b99/bubble-icon?v=1701973386424",
+      size: "large",
+    },
     previewMessage: {
-      backgroundColor:
-        "https://app.typebot.io/images/backgrounds/brightRain.jpeg",
+      backgroundColor: "#0042DA",
+      textColor: "#FFFFFF",
+      closeButtonBackgroundColor: "#0042DA",
+      closeButtonIconColor: "#FFFFFF",
     },
   },
 });
